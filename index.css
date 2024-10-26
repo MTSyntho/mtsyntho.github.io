@@ -3,10 +3,16 @@ body {
 	background: linear-gradient(7deg, rgba(21,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(111,0,255,1) 100%);
 }
 
-p, h1, h2, h3, h4 {
-	font-family: inter;
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf');
+}
+
+p, h1, h2, h3, h4, a {
+	font-family: 'Inter';
 	color: white;
 	font-weight: normal;
+ 	text-shadow: 0 0 15px #ffffff50;  
 }
 
 h1 {
@@ -25,7 +31,7 @@ p {
 }
 
 h5 {
-	font-family: inter;
+	font-family: 'Inter';
 	font-weight: normal;
 	color: white;
 }
@@ -67,14 +73,25 @@ body {
 .content {
   position: fixed;
   opacity: 0;
+  pointer-events: none;
+}
+
+.home {
+  z-index: 2;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    pointer-events: none;
+    transform: translate(0px, 20px);
+    scale: 0.8;
   }
   to {
     opacity: 1;
+    pointer-events: all;
+    transform: translate(0px, 0px);
+    scale: 1;
   }
 }
 
@@ -85,9 +102,15 @@ body {
 @keyframes fadeOut {
   from {
     opacity: 1;
+    pointer-events: all;
+    transform: translate(0px, 0px);
+    scale: 1;
   }
   to {
     opacity: 0;
+    pointer-events: none;
+    transform: translate(0px, 20px);
+    scale: 0.8;
   }
 }
 
@@ -95,6 +118,181 @@ body {
   animation: fadeOut 0.5s ease-in-out forwards;
 }
 
-a {
+/*a {
 	color: white;
+}*/
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    scale: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    pointer-events: all;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+    scale: 1;
+    pointer-events: all;
+  }
+  to {
+    opacity: 0;
+    scale: 2;
+    pointer-events: none;
+  }
+}
+
+.zoomOut {
+  animation: zoomOut 0.5s ease-in-out forwards;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbg {
+  background: linear-gradient(#110b1750, #00000000);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  opacity: 0;
+}
+
+.navbtn {
+  font-weight: 500;
+  padding: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition-duration: 0.2s
+}
+
+.navbtn:hover {
+  font-size: 20px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.selected {
+  font-style: italic;
+}
+
+@keyframes navbarIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: all;
+  }
+}
+
+.navbarIn {
+  animation: navbarIn 0.5s ease-in-out forwards;
+}
+
+@keyframes navbarOut {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: all;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20%);
+    pointer-events: none;
+  }
+}
+
+.navbarOut {
+  animation: navbarOut 0.5s ease-in-out forwards;
+}
+
+.name {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 15px #ffffffcc;
+  }
+  to {
+    text-shadow: 0 0 30px #ffffffaa;
+  }
+}
+
+.btns {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  background: rgba(21,0,36,0.3);
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  color: white;
+  font-family: Satoshi-Regular;
+  box-shadow: 0px 0px 7px #000000cc;
+  transition-duration: 0.2s
+}
+
+button:hover {
+  scale: 1.07;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+.love {
+  position: fixed;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+@keyframes love {
+  from {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(0px, 20px);
+    scale: 0.8;
+  }
+  to {
+    opacity: 0.5;
+    pointer-events: all;
+    transform: translate(0px, 0px);
+    scale: 1;
+  }
+}
+
+.loveanimation {
+  animation: love 0.5s ease-in-out forwards;
 }

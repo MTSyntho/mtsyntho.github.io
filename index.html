@@ -3,42 +3,131 @@
 		<title>call me '𝚖𝚝.'</title>
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="css/satoshi.css">
-		<script src=magic.js></script>
+		<script src=magic.js defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="MTSyntho" />
+		<meta name="description" content="Just a personal website by MTSyntho <3" />
+		<meta property="og:title" content="MTSyntho" />
+		<meta property="og:description" content="Just a personal website by MTSyntho <3" />
+		<meta property="og:image:url" content="https://yt3.googleusercontent.com/_7X-Ozsr3kkJqtV_orUMeZgsUPaCN5w6c6Efi1rPKPZhKCYZ_20uydBsfQM6nQ93qPPu7k8X=s512-c-k-c0x00ffffff-no-rj" />
+		<meta charset="UTF-8">
 	</head>
 	<body>
+		<div id=navbar class=navbg>
+			<nav class=navbar>
+			  <div>
+				<a href='#' onclick="home()" class="logo">
+				  <p><i><b>mt's cool stuff :3</b></i></p>
+				</a>
+			  </div>
+			  <div class=right>
+				<a href='#' onclick="home()" class=navbtn>Home</a>
+				<a id=navbtn class='navbtn selected'>Name</a>
+<!-- 			<a href="#development" onclick="section('software')" class='navbtn'>Software</a>
+				<a href="#music" onclick="section('music')" class='navbtn'>Music</a>
+				<a href="#art" onclick="section('art')" class='navbtn'>Artworks</a>
+				<a href="#youtube" onclick="section('youtube')" class='navbtn'>YouTube</a>		-->
+			  </div>
+			</nav>
+		</div>
+		<div id=home class='content home'>
+			<h1 class=name>MTSyntho</h1>
+			<h3><a href="#development" onclick="section('Software')">Software/Game Developer</a> • <a href="#music" onclick="section('Music')">Musician</a> • <a href="#art" onclick="section('Artworks')">Amateur Artist</a> • <a href="#youtube" onclick="section('YouTube')">YouTuber</a></h3>
+			<div class=line></div>
+			<p>Hi! I'm MTSyntho <i>but you can call me 'mt.'</i> :)</p>
+			<p>I procrastinate <i>alot</i> however when feeling motivated enough, I can do a variety of things!<br>From building software n games to making <i>hopefully</i> entertatining YouTube videos!</p>
+			<h5><i>p.s. try clicking the links below my name! <3</i></h5>
+		</div>
 		<div class=wrapper>
-			<div id=home class=content>
-				<h1>MTSyntho</h1>
-				<h3><a href="#" onclick="development()">Software/Game Developer</a> • Musician • Amateur Artist • YouTuber</h3>
-				<div class=line></div>
-				<p>Hi! I'm MTSyntho <i>but you can call me 'mt.'</i> :)</p>
-				<p>I procrastinate <i>alot</i> however when feeling motivated enough, I can do a variety of things!<br>From building software n games to making <i>hopefully</i> entertatining YouTube videos!</p>
-				<h5><i>p.s. try clicking the links below my name! <3
-			</div>
-			<div id=software class=content>
+			<div class=content id=Software>
 				<h3 class=bold>Software & Game Developement</h3>
 				<div class=line></div>
 				<p>Since the age of 8 years old, i've always aspired to become a great game developer and now here I am-<br>6 years later (as of Sep 2024) Occasionally making new pieces of software and small games for anyone to use :))</p>
 				<p>I've used a variety of tools for development, like Sketchware, Scratch, GDevelop and so on throughout the years however I primarily use Sublime Text (Software Dev) and GDevelop (Game Dev)!<br>I have some links to my works <i>if you're interested</i> :)</p>
+				<div class=btns>
+					<a href='https://mtsyntho.itch.io'>
+						<button>itch.io</button>
+					</a>
+					<a href='https://gamejolt.com/@MTSyntho'>
+						<button>GameJolt</button>
+					</a>
+					<a href='https://gd.games/mtsyntho'>
+						<button>gd.games</button>
+					</a>
+				</div>
 			</div>
-			<div class=content id=music>
+			<div class=content id=Music>
 				<h3 class=bold>Music Production</h3>
 				<div class=line></div>
 				<p>Let's be honest, Music is one of the greatest things ever made!<br>Life would honestly be so mundane without it! That's why I make it :)<br>Some of my favourite artists (in order) are: Windows96, stfu.far, AZALI, and the list goes on!</p>
 				<p>Anyways, it's best you find my songs on YouTube, however as of Sep 2024,<br>all my <i>much older</i> songs can be found on SoundCloud.</p>
+				<div class=btns>
+					<a href='https://youtube.com/channel/UC0o74wfg_XQ-53BCBkfhn-g'>
+						<button>YouTube</button>
+					</a>
+					<a href='https://open.spotify.com/artist/0ecubymaVkVVyj6UTotRoZ'>
+						<button>Spotify</button>
+					</a>
+					<a href='https://music.apple.com/us/artist/mtsyntho/1745773389'>
+						<button>Apple Music</button>
+					</a>
+					<a href='https://www.deezer.com/us/artist/264005741'>
+						<button>Deezer</button>
+					</a>
+					<a href='https://music.amazon.com/artists/B0DHKDS6BZ/mtsyntho'>
+						<button>Amazon</button>
+					</a>
+					<a href='https://soundcloud.com/mtsyntho'>
+						<button>SoundCloud</button>
+					</a>
+					<a href='https://www.boomplay.com/artists/98468896'>
+						<button>Boomplay</button>
+					</a>
+				</div>
 			</div>
-			<div class=content id=art>
+			<div class=content id=Artworks>
 				<h3 class=bold><i>Amateur</i> Artist</h3>
 				<div class=line></div>
 				<p>For years and years, i've yearned to make digital illustration, but struggled to make progress despite<br>numerous attempts and tutorials. I got back into art after having a friend send me a Demon Slayer fan animation<br> which had apparently been made by a classmate (or schoolmate idk), this reignited my passion for Art!<br>It's pretty fun and the finished result always feels great!</p>
 				<p>Anyway, I'm not open for commisions as I still need to practice my skills more and more,<br> but otherwise, you can take a look at my work on ibisPaint n DeviantArt :D</p>
+				<div class=btns>
+					<a href='https://ibispaint.com/artist1/1399400775235874821/?type=illust'>
+						<button>ibisPaint</button>
+					</a>
+					<a href='https://www.deviantart.com/itsicecreeperpe'>
+						<button>DeviantArt</button>
+					</a>
+				</div>
 			</div>
-			<div class=content id=youtube>
+			<div class=content id=YouTube>
 				<h3 class=bold>YouTuber</h3>
 				<div class=line></div>
 				<p>I love YouTube, and I love creating videos!<br>I procrastinate alot so videos usually take a few months to produce... ;-;</p>
 				<p>Anyway, you may check out my channels below :3</p>
+				<div class=btns>
+					<a href='https://www.youtube.com/channel/UCUMnysaUHerX_fJ_NcYB6-g'>
+						<button>MTSyntho</button>
+					</a>
+					<a href='https://www.youtube.com/channel/UC0o74wfg_XQ-53BCBkfhn-g'>
+						<button>Music</button>
+					</a>
+					<a href='https://www.youtube.com/channel/UC0EaHOKwmGh61OJSPKO27kg'>
+						<button>Development</button>
+					</a>
+					<a href='https://www.youtube.com/channel/UCWtDIzCEEwXRnHE-f-OFujA'>
+						<button>Gacha</button>
+					</a>
+					<a href='https://www.youtube.com/channel/UCPvxU2ExsRibSCHr2jaCYEA'>
+						<button>GDSyntho</button>
+					</a>
+					<a href='https://www.youtube.com/channel/UCDSgDTN6J5fEEUaszoIiUZg'>
+						<button>Extras</button>
+					</a>
+					<a href='https://www.tiktok.com/@mtsyntho'>
+						<button>Tiktok</button>
+					</a>
 			</div>
 		</div>
+		<p class='love loveanimation'>Made with <3 'n' magic :3</p>
 	</body>
 </html>
