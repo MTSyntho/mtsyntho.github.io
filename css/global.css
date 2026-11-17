@@ -52,6 +52,8 @@ button {
   z-index: 5;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  box-sizing: border-box;
+  justify-content: space-between
 }
 
 .hcenter {
