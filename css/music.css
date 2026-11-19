@@ -1,0 +1,39 @@
+.inner-content {
+	width: 70%;
+}
+
+.sidebar-content {
+	background: #ffffff20;
+	width: 30%;
+	height: 100%;
+	margin: 0;
+	border-radius: 4px;
+	display: flow-root;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #ffffff20;
+}
+
+@media ( max-width: 860px ) {
+	.content {
+		flex-direction: column-reverse;
+	}
+
+	.inner-content, .sidebar-content {
+		width: 100%;
+	}
+
+	.sidebar-content {
+		height: auto;
+	}
+}
+
+.profile-card {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.profile-card > div > p {
+	margin: 0;
+}
